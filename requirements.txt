@@ -1,0 +1,19 @@
+# MLB Pitcher-Batter Suppression Dashboard
+# Python >= 3.11 required (for zoneinfo built-in)
+
+# ── Core UI ───────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Data / HTTP ───────────────────────────────────────────────────────────────
+requests>=2.31.0
+pandas>=2.1.0
+
+# ── Baseball data ─────────────────────────────────────────────────────────────
+pybaseball>=2.2.7          # FanGraphs stats + Statcast; wraps Baseball Savant CSV
+
+# ── Markdown → HTML export ────────────────────────────────────────────────────
+markdown2>=2.4.10
+
+# ── Optional: faster HTTP (used by pybaseball) ────────────────────────────────
+lxml>=4.9.0                # HTML parsing fallback for lineup scraper
+beautifulsoup4>=4.12.0
